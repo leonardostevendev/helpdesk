@@ -1,0 +1,30 @@
+<?php
+namespace sts;
+use sts as core;
+
+if (!defined(__NAMESPACE__ . '\ROOT')) exit;
+
+$id 		= (int) $url->get_item();
+$ticket_id 	= (int) $_POST['ticket_id'];
+
+if (isset($_POST['save'])) {
+	if ((int) $ticket_id != 0) {
+
+		if ($auth->can('manage_tickets') || $auth->can('tickets_view_assigned_department')) {
+
+			$allowed = true;
+			if (!$auth->can('manage_tickets')) {
+				if (!$tickets_support->can(array('action' => 'view', 'id' => $ticket_id))) {
+					$allowed = false;
+				}
+			}
+
+			if ($allowed) {
+				$ticket_notes->edit(array('description' => $_POST['description'], 'id' => $id, 'where' => array('ticket_id' => $ticket_id)));
+			}
+
+		}
+	}
+}
+
+?>

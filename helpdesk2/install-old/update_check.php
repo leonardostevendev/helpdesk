@@ -1,0 +1,22 @@
+<?php
+include('common.php');
+
+$send_data['application_id'] 	= 1;
+$send_data['version'] 			= $ipm_install->get_config('version');
+$send_data['custom_data']		= array('type' => 'installer');
+
+$data = $apptrack->send($send_data);
+
+if (!empty($data)) {
+	$version = explode('-', $ipm_install->get_config('version'));
+	if (version_compare($version[0], $data['version'], '<')) {
+		echo json_encode(array('success' => true, 'is_current_version' => false, 'version' => $data['version']));
+	}
+	else {
+		echo json_encode(array('success' => true, 'is_current_version' => true, 'version' => $data['version']));
+	}
+}
+else {
+	echo json_encode(array('success' => false, 'is_current_version' => true, 'version' => ''));
+}
+?>

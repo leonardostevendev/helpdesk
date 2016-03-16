@@ -1,0 +1,10 @@
+/*	//	//	//	//	//	//	//	//	//	//	//	//	//
+//													//
+//	Show-More Plugin by Reuben @dalegroup	       	//
+//													//
+//	//	//	//	//	//	//	//	//	//	//	//	//	*/
+.show-more{ }
+.hide-this{ display:none; }
+.hide-arrow{ transition: 0.3s ease; float:right; font-size:25pt; transform: scaleX(0.6);-webkit-transform: scaleX(0.6); margin-top:-6px; margin-right:1px;}
+.spin180{ transform: rotate(180deg) scaleX(0.6); -webkit-transform: rotate(180deg) scaleX(0.6); -ms-transform: rotate(180deg) scaleX(0.6); transition: 0.3s ease; }
+.spin90{ transform:rotate(90deg scaleX(0.6)); -webkit-transform: rotate(180deg) scaleX(0.6); -ms-transform: rotate(180deg) scaleX(0.6); transition: 0.3s ease; }

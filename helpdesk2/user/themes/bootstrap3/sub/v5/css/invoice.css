@@ -1,0 +1,183 @@
+/*                                  */
+/*              Invoice             */
+/*      Custom Invoice Style        */
+/*                                  */
+
+
+.invoice-body .container{
+    background:#fff !important;
+    background-image:none !important;
+}
+
+.invoice {
+    border:1px #e5e5e5 solid;
+    background:url(../img/footimg_dk.png) no-repeat 700px -20px;
+    width:700px;
+    margin-left:20px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.invoice p{
+    line-height:12pt;
+}
+
+.invoice .col-sm-6, .invoice .col-sm-12{
+    padding-right:0px;
+    padding-left:0px;
+}
+
+@media all and (max-width:768px){
+    .invoice .col-sm-6{
+        width:50%;
+        float:left;
+    }
+    .invoice .col-sm-12{
+        width:100%;
+    }
+}
+
+.invoice h1{
+    color: #37A0DE;
+    font-size:38pt;
+    background: url(../img/headimg_c.png) no-repeat 240px -5px;
+    background-size:60px;
+    width:300px;
+}
+
+.invoice .invoice-left{
+    width:80%;
+    margin-left:5%;
+    float:left;
+}
+
+.invoice .invoice-right{
+    width:95%;
+    margin-right:5%;
+    float:right;
+}
+
+.invoice .invoice-center{
+    margin-left:2.2%;
+    margin-right:2.2%;
+    float:left;
+    margin-top:20px;
+}
+
+.invoice-box h2{
+    margin-top:0px;
+    color:#fff !important;
+}
+
+.invoice .text-muted{
+    color:#fff;
+    font-size:16pt;
+}
+
+.invoice-total{
+    text-align:right;
+    background:url(../img/noise.png);
+    background-color:#37a0de;
+    border:1px solid #fff !important;
+    color:#fff !important;
+}
+
+.numbers{
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left:2.5%;
+    margin-right:2.5%;
+    width:95%;
+}
+
+.billing-details{
+    width:250px;
+    clear:left;
+}
+
+.invoice-details{
+    background:url(../img/footimg_dk.png) no-repeat -150px 300px;
+}
+
+.sub{
+    text-align:right;
+}
+
+.sub2 p{
+    padding-right:24px;
+}
+
+.invoice .col-sm-6{
+    font-size:14px !important;
+}
+
+.sub-heading{
+    float:left;
+}
+
+
+.invoice  .table-responsive table, .invoice  .table-responsive th, .invoice  .table-responsive td {
+   border: 1px solid #ddd;
+}
+
+.invoice .table{
+    margin-bottom:0 !important;
+}
+
+.table > thead > tr > th{
+    border-bottom:none;
+
+}
+
+.invoice-box{
+    border:1px #e5e5e5 solid;
+    margin-top:22px;
+    padding:10px 10px 0px 10px;
+}
+
+.invoice hr{
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.comment{
+    background:url(../img/noise.png);
+    float:left;
+    text-align:left;
+    background-color:#f9f9f9;
+    padding:10px;
+    margin-left:2.5%;
+    margin-right:2.5%;
+    width:95%;
+    margin-top:30px;
+    margin-bottom:50px;
+    border:1px #e5e5e5 solid;
+}
+
+.invoice-buttons{
+    min-width:240px;
+}
+
+@media print {
+	body {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.no_print {
+		display: none;
+	}
+	.invoice{
+		border:0px;
+		padding-left:0px !important;
+		padding-right:0px !important;
+		width:750px !important;
+		margin-left:0px;
+		padding-left:0px;
+		padding-right:0px;
+	}
+}
+
+/*                                  */
+/*          End                     */
+/*      Custom Invoice Style        */
+/*                                  */

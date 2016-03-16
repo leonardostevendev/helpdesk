@@ -1,0 +1,47 @@
+* #lcs {
+	z-index: 1000;
+	font-size: 14px;
+    letter-spacing: 0;
+	overflow: hidden;
+	display: block;
+	height: 30px;
+	width: 275px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	text-align: right;
+	font-weight: bold;
+	border: 2px #3FA8CC solid;
+    border-radius: 4px;
+	background-color: #3FA8CC;
+}
+
+* #lcs p {
+	margin: 0;
+	padding: 0;
+}
+* #lcs a {
+	color: #FFF;
+}
+
+* #lcs_body {
+	
+}
+
+* #lcs_frame {
+	border: 0px;
+	width: 280px;
+	height: 100%;
+}
+
+* #lcs_chat_links {
+	position: fixed;
+	bottom: 0;
+	right: 2px;
+	padding-right: 10px;
+	padding-top: 10px;
+	/*
+		You might need to try 10px or 12px to make it perfect
+	*/
+	margin-bottom: 10px;
+}

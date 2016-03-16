@@ -1,0 +1,1393 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Dalegroup Tickets</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Tickets&rdquo; Documentation by &ldquo;Michael Dale&rdquo; v5.0</h3>
+		
+		<hr>
+		
+		<h1 class="center"><img src="assets/images/tickets.png" alt="Tickets" /></h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 08/10/2014<br>
+					By: <a href="http://codecanyon.net/user/michaeldale">Michael Dale</a><br>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing Tickets. If you have any questions that are beyond the scope of this help file, please feel free to log a support request via our <a href="http://portal.dalegroup.net/">support portal</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#welcome">Welcome</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#requirements">System Requirements</a></li>
+			<li><a href="#install">Install</a></li>
+			<li><a href="#upgrade">Upgrading</a></li>
+			<li><a href="#releaseLog">Release Log</a></li>
+			<li><a href="#developers">Developers</a></li>
+			<li><a href="#credits">Credits</a></li>
+			<li><a href="#license">License</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="welcome"><strong>Welcome</strong> - <a href="#toc">top</a></h3>
+	
+		<p>Welcome to Tickets.</p>
+	
+		<p class="center"><img src="assets/images/tickets32.png" alt="Tickets" /></p>
+		
+		
+		<p>Tickets is a full featured, yet easy to use help-desk system.</p>
+
+		<p>It is great for users and businesses who wish to keep track of and manage support requests online.</p>
+
+		<p>You can create multiple users, search tickets, convert POP3 emails into tickets, create custom priorities and much much more.</p>
+
+		<p>Tickets has been designed to be easy to install and all config files and database files are created during the install. You simply need a web hosting account and one free MySQL database (no programming is required).</p>
+
+		<p>You can easily upgrade to new versions free of charge. All your existing settings, users and tickets are kept intact.</p>
+
+		<p>If you have any problems at all please leave a comment here and we will get back to you as quickly as possible.</p>
+
+		<p>Tickets has been built around our own custom framework that is used in a number of different public and private applications. It has proven to be stable and secure.</p>
+
+		<p>For advanced users or programmers you can create your own plugins to extend the program. Please see the Developers section for a link to the developer pack.</p>
+				
+		<p>Tickets is designed to be a stand alone web application, you are of course welcome to modify the code, but I cannot support modified code if it breaks.</p>
+		
+		<p>Whenever I release a new version of Tickets an upgrade script is included (more below), please make sure you keep Tickets up to date.</p>
+		
+		<p>Please note: If you modify the Tickets code the upgrade script may fail. It will be up to you to fix this if a problem occurs. You must support your own code changes.</p>
+	
+		<hr>
+		
+		<h3 id="support"><strong>Support</strong> - <a href="#toc">top</a></h3>
+		
+		<p>We have our own support portal that includes a support ticket system, knowledge base and forums, please register here for all support needs.</p>
+		
+		<p class="center"><a href="http://portal.dalegroup.net" class="button">Dalegroup Support Portal</a></p>
+						
+		<hr>
+
+		<h3 id="features"><strong>Features</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Tickets includes a number of features.</p>
+		
+		<ul>			
+			<li>UI Features
+				<ul>
+					<li>Easy to use with a clean design</li>
+					<li>Responsive Design and Mobile Ready</li>
+					<li>Bootstrap 3 Framework</li>
+					<li>Redactor 9 WYSIWYG Editor</li>
+					<li>HTML Tickets and Replies</li>
+					<li>Gravatar</li>
+				</ul>
+			</li>
+			
+			<li>Ticketing Features
+				<ul>
+					<li>POP3 Downloader (create and reply to tickets via email). Supports multiple POP accounts.</li>
+					<li>Mass Open/Close/Delete/Merge Tickets</li>
+					<li>Multiple File Attachments</li>
+					<li>Advanced Ticket Search</li>
+					<li>Departments (can assign users to multiple departments)</li>
+					<li>Transfer Departments &amp; Assign Users</li>
+					<li>Guest Portal</li>
+					<li>Staff Collision Detection</li>
+					<li>Private Replies and Files</li>
+					<li>CC Tickets</li>
+				</ul>
+			</li>
+				<li>Customise
+				<ul>
+					<li>Priorities</li>
+					<li>Status (with custom colour and global open/closed type)</li>
+					<li>Custom Fields (Types: Text Input, Text Area and Dropdown. Staff Only or End User Viewable)</li>
+					<li>Canned/Predefined Responses</li>
+					<li>HTML Email Templates</li>
+					<li>Language translation support</li>
+					<li>Timezone</li>
+				</ul>
+			</li>		
+			<li>System Features
+				<ul>
+					<li>Full web installer</li>
+					<li>SMTP Support. Supports multiple SMTP accounts.</li>
+					<li>User Registration &amp; Forgot/Reset Password</li>
+					<li>Update Checker and Auto Upgrader</li>
+					<li>Private Messages</li>
+					<li>Free Upgrades</li>
+					<li>Access to the source code (license allows you to modify the code for internal purposes)</li>
+					<li>Single Install License (unlimited Users and Tickets)</li>					
+					<li>Plugins Support (free SmartBackup plugin on portal.dalegroup.net)</li>
+					<li>Pushover Notifications for iPhone and Android</li>
+				</ul>
+			</li>
+			
+			<li>Audit, Logging and Security
+				<ul>
+					<li>Security Logging (login failed, emails sent, file uploaded and much more)</li>
+					<li>Extensive Ticket audit trail (who changed status, replied, transferred and more)</li>
+					<li>HTML Purifier protection for HTML output</li>
+					<li>Account lockout on multiple failed logins</li>
+					<li>SQL bound parameters using PDO MySQL class</li>
+					<li>HTTPs/SSL Support</li>
+					<li>Six User Permission Levels</li>
+				</ul>
+			</li>
+			
+			<li>Authentication
+				<ul>
+					<li>Local Database</li>
+					<li>LDAP</li>
+					<li>Active Directory</li>
+					<li>Facebook</li>
+					<li>Custom JSON (for your other web apps)</li>
+					<li>Single Sign On (SSO) Support</li>
+				</ul>
+			</li>
+			
+		</ul>
+	
+
+		<hr>
+		
+		<h3 id="requirements"><strong>System Requirements</strong> - <a href="#toc">top</a></h3>
+
+		<p>Tickets is written in PHP5.3 and uses a MySQL5 database. Tickets is a "Web Application" that must be installed on a Web Server.</p>
+
+		<p>You must install Tickets on a web host that supports PHP5.3, MySQL5 and Apache.</p>
+		
+		<p>You may also install Tickets on your personal computer by using one of the many options (i.e google WAMPserver or XAMPP), this is not covered in this document.</p>
+		
+		<p>The full system requirements can be found below.</p>
+		<ul>
+			<li>PHP 5.3+</li>
+			<li>MySQL 5+ with 1 empty database</li>
+			<li>PHP PDO MySQL Extension</li>
+			<li>PHP LDAP Exentsion (for Active Directory support)</li>
+			<li>PHP GD Exentsion (for anti-spam capture)</li>
+			<li>PHP able to write files to the installed directory</li>
+			<li>Apache with Rewrite Module</li>
+			<li>A Web Browser that supports HTML5/Javascript (IE9+, FireFox, Safari, Chrome)</li>
+		</ul>
+
+		<hr>
+		
+		<h3 id="install"><strong>Install</strong> - <a href="#toc">top</a></h3>
+		
+		<p>There are a number of steps required to install Tickets.</p>
+		
+		<ol>
+			<li>Copy the unzipped contents of the zip file to somewhere on your webserver. You can install Tickets in a folder on your existing web hosting or setup a new subdomain.</li>
+			<li>Create an empty MySQL database (most hosting provides a control panel that allows you to do this).</li>
+			<li>Ensure your PHP install can create files (for config.php to be created during the install).</li>
+			<li>Run http://tickets.example.com/install/ from your web browser.</li>
+			<li>Follow the steps.</li>
+			<li>Backup your MySQL database and user/settings/config.php file.</li>
+			<li>Setup a process to visit http://tickets.example.com/cron/ every 5 minutes (more info below in the CRON section).</li>
+			<li>Done</li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="permissions"><strong>Permissions for Install</strong> - <a href="#toc">top</a></h3>
+
+		<p>During the Tickets install two files will be created, .htaccess (in the root of the tickets folder) and config.php (in user/settings/).</p>
+		
+		<p>These files are required for Tickets to function.</p>
+		
+		<p>If the install fails and is unable to write these files please check the security permissions on the tickets folder on your web server.</p>
+		
+		<p>On Linux/BSD/MacOS the easiest thing to do is to set the permissions of the entire folder to 777. Once the install has completed we recommend you switch back to 755.</p>
+
+		<p>Otherwise you can simply try 755, it depends on your web host.</p>
+		
+		<p>For information on chmod permissions please see <a href="http://michaeldale.com.au/archive/2005/03/04/basics-of-chmod/">this page</a>.</p>
+		
+		<hr>
+		
+				
+		<h3 id="upgrade"><strong>Upgrading</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Upgrading is pretty easy.</p>
+		
+		<ol>
+			<li>Download the latest version of the Tickets zip file</li>
+			<li>Backup your MySQL database, config.php file and .htaccess file.</li>
+			<li>Backup any custom code or changes you have made (this will be overwritten).</li>
+			<li>Unzip the new install onto your local computer.</li>
+			<li>Delete the install/ folder.</li>
+			<li>Upload this to your existing install of Tickets replacing all existing files.</li>
+			<li>Login</li>
+			<li>Run the database upgrade from your web browser (run http://tickets.example.com/upgrade/).</li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="cron"><strong>CRON Setup</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The cron system allows Tickets to send and receive emails (and other tasks) in the background. Please ensure this is setup as it is a required task.</p>
+		
+		<p>There are a number of ways to set this up. The best method is to use a Linux Cron style setup on the server itself. This will be the most reliable method.</p>
+		
+		<p>Although you can use one of the many free web cron services, these often only work once every 10-15mintes, meaning that emails take longer to send.</p>
+		
+		<h4>Linux Cron</h4>
+		
+		<ol>
+			<li>Type crontab -e in your linux command line.</li>
+			<li>Type in the following: */5 * * * * wget -q -O /dev/null "http://tickets.example.com/cron/"</li>
+			<li>Save</li>
+			<li>crontab -l should now list the cron process</p>
+		</ol>
+		
+		<p>If you do not have access to the command line you might have access to the web hosting control panel that should allow this. Otherwise talk with your webhost.</p>
+		
+		<h4>Windows Scheduled Task</h4>
+		
+		<p>Windows supports the same type of CRON process through the use of a Scheduled Task and a 3rd party wget program.</p>
+		
+		<p><a href="http://gnuwin32.sourceforge.net/packages/wget.htm">Wget for Windows</a></p>
+		
+		<hr>
+				
+				
+		<h3 id="email_templates"><strong>Custom Email Notification Templates</strong> - <a href="#toc">top</a></h3>
+
+		<p>Tickets allows you to customise the emails sent to users.</p>
+		
+		<p>You can use the following fields in your templates.</p>
+		
+		<table class="data-table">
+			<tr>
+				<th>Field</th>
+				<th>Description</th>
+				<th>Available In</th>
+
+			</tr>
+
+			<tr>
+				<td class="centre">#SITE_NAME#</td>
+				<td class="centre">The name of your site.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply, New User</td>
+			</tr>
+			<tr>
+				<td class="centre">#SITE_ADDRESS#</td>
+				<td class="centre">The URL of your site.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply, New User</td>
+			</tr>
+			<tr>
+				<td class="centre">#TICKET_KEY#</td>
+				<td class="centre">REQUIRED - Allows Tickets to match emails to tickets.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>
+			<tr>
+				<td class="centre">#TICKET_SUBJECT#</td>
+				<td class="centre">The subject of the ticket.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>
+			<tr>
+				<td class="centre">#TICKET_ID#</td>
+				<td class="centre">The id of the ticket.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>
+			<tr>
+				<td class="centre">#TICKET_DESCRIPTION#</td>
+				<td class="centre">The body of the ticket.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>		
+			<tr>
+				<td class="centre">#TICKET_NOTE_DESCRIPTION#</td>
+				<td class="centre">The body of the ticket reply.</td>
+				<td class="centre">New Ticket Reply, New Department Ticket Reply</td>
+			</tr>				
+			<tr>
+				<td class="centre">#GUEST_URL#</td>
+				<td class="centre">An HTML link to access the ticket without login.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>				
+			<tr>
+				<td class="centre">#TICKET_URL#</td>
+				<td class="centre">An HTML link to access the ticket.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>	
+			
+			<tr>
+				<td class="centre">#TICKET_DEPARTMENT#</td>
+				<td class="centre">The department that the ticket is in.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>
+			<tr>
+				<td class="centre">#TICKET_STATUS#</td>
+				<td class="centre">The status of the ticket.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>
+			<tr>
+				<td class="centre">#TICKET_PRIORITY#</td>
+				<td class="centre">The priority of the ticket.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>						
+			<tr>
+				<td class="centre">#TICKET_OWNER_NAME#</td>
+				<td class="centre">The owner name of the ticket.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>	
+			<tr>
+				<td class="centre">#TICKET_OWNER_EMAIL#</td>
+				<td class="centre">The owner email of the ticket.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>	
+			<tr>
+				<td class="centre">#TICKET_ASSIGNED_NAME#</td>
+				<td class="centre">The assigned user full name of the ticket.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>	
+			<tr>
+				<td class="centre">#TICKET_ASSIGNED_EMAIL#</td>
+				<td class="centre">The assigned user email address of the ticket.</td>
+				<td class="centre">New Ticket, New Department Ticket, New Ticket Reply, New Department Ticket Reply</td>
+			</tr>				
+			<tr>
+				<td class="centre">#USER_FULLNAME#</td>
+				<td class="centre">The name of the user that the email/account is for.</td>
+				<td class="centre">New User</td>
+			</tr>
+			<tr>
+				<td class="centre">#USER_NAME#</td>
+				<td class="centre">The username of the user that the email/account is for.</td>
+				<td class="centre">New User</td>
+			</tr>
+			<tr>
+				<td class="centre">#USER_PASSWORD#</td>
+				<td class="centre">The password of the user that the email/account is for.</td>
+				<td class="centre">New User</td>
+			</tr>
+			<tr>
+				<td class="centre">#USER_EMAIL#</td>
+				<td class="centre">The email address of the user that the email/account is for.</td>
+				<td class="centre">New User</td>
+			</tr>
+			
+		</table>	
+		
+		<hr>
+		
+		
+		<h3 id="pop3"><strong>POP3 Download</strong> - <a href="#toc">top</a></h3>
+
+		<p>The POP3 download system allows you to use an email address to send and receive tickets.</p>
+		
+		<p>Although not required we recommend that you use a new POP3 mail account to ensure that only new messages are imported.</p>
+		
+		<p>The POP3 download system supports multiple accounts. Here is an example setup.</p>
+		
+		<table class="data-table">
+			<tr>
+				<th>POP Account</th>
+				<th>Department</th>
+				<th>Leave Messages (on server)</th>
+				<th>Download Files</th>
+				<th>Priority</th>
+			</tr>
+
+			<tr>
+				<td class="centre">accounts@example.com</td>
+				<td class="centre">Accounts</td>
+				<td class="centre">Yes</td>
+				<td class="centre">Yes</td>
+				<td class="centre">Medium</td>
+			</tr>
+			<tr>
+				<td class="centre">support@example.com</td>
+				<td class="centre">Support</td>
+				<td class="centre">No</td>
+				<td class="centre">Yes</td>
+				<td class="centre">High</td>
+			</tr>
+			<tr>
+				<td class="centre">sales@example.com</td>
+				<td class="centre">Sales</td>
+				<td class="centre">No</td>
+				<td class="centre">Yes</td>
+				<td class="centre">Medium</td>
+			</tr>
+			<tr>
+				<td class="centre">sms@example.com</td>
+				<td class="centre">SMS Notices</td>
+				<td class="centre">No</td>
+				<td class="centre">No</td>
+				<td class="centre">High</td>
+			</tr>
+			
+		</table>
+		
+		<p>If you have an existing contact form on your website you can simply create a new department in Tickets and POP3 account. Once this is done, setup your contact form to send emails to this new address. Tickets can then download these messages.</p>
+		
+		<hr>		
+		
+		<h3 id="user_permissions"><strong>User Permissions</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Tickets includes 6 different user levels/permissions. These permissions allow you to add users with restricted access to features or tickets.</p>
+
+		<p>Permissions are global. So if a user is a moderator, they can moderate tickets from any department that they are assigned to.</p>
+		
+		<table class="data-table">
+			<tr>
+				<th>Permission</th>
+				<th>Features</th>
+				<th>Ticket Access</th>
+				<th>Use</th>
+			</tr>
+
+			<tr>
+				<td class="centre">Administrator</td>
+				<td class="centre">All Features (Profile, Tickets, Tickets Mass Moderate, Users, Settings)</td>
+				<td class="centre">All Tickets</td>
+				<td class="centre">This should only be given to technical users that are completely trusted with the system.</td>
+			</tr>
+			<tr>
+				<td class="centre">Global Moderator</td>
+				<td class="centre">Profile, Tickets, Tickets Mass Moderate</td>
+				<td class="centre">All Tickets</td>
+				<td class="centre">Allows access to every ticket in the system.</td>
+			</tr>
+			<tr>
+				<td class="centre">Moderator</td>
+				<td class="centre">Profile, Tickets, Tickets Mass Moderate</td>
+				<td class="centre">Add/Edit/Delete/View (all tickets in departments that the user is a member of).</td>
+				<td class="centre">Department Manager</td>
+			</tr>
+			<tr>
+				<td class="centre">Staff</td>
+				<td class="centre">Profile, Tickets</td>
+				<td class="centre">Add/View and basic Edit (all tickets in departments that the user is a member of).</td>
+				<td class="centre">Support Staff</td>
+			</tr>
+			<tr>
+				<td class="centre">User</td>
+				<td class="centre">Profile, Tickets</td>
+				<td class="centre">Add/View and basic Edit (only tickets assigned to or created by the user).</td>
+				<td class="centre">Contractor</td>
+			</tr>			
+			<tr>
+				<td class="centre">Submitter</td>
+				<td class="centre">Profile, Tickets</td>
+				<td class="centre">Add/View and basic Edit (only tickets created by the user).</td>
+				<td class="centre">Client/End User</td>
+			</tr>	
+		</table>	
+		
+		<hr>
+		
+		<h3 id="language"><strong>Custom Language</strong> - <a href="#toc">top</a></h3>
+
+		<p>To create your own language</p>
+		
+		<ol>
+			<li>Make sure you have a good text editor. On Windows I recommend <a href="http://notepad-plus-plus.org">Notepad++</a></li>
+			<li>Ensure that you use the encoding type UTF-8 without BOM in the text editor.</li>
+			<li>Copy system/languages/english_aus.lang.php to user/languages/example.php</li>
+			<li>Open the new example.php file in your text editor.</li>
+			<li>Change the words on the right hand side to match your language (leaving the left hand side alone).</li>
+			<li>When finished save the file and close</li>
+			<li>Load Tickets and go to Settings.</li>
+			<li>Change the "Default Language" to "Example"</li>
+		</ol>
+
+		<p>When you make a new language, if you could please send it to me that would be great. I can then include this in future versions for everyone to use.</p>
+				
+		<hr>
+		
+		<h3 id="releaseLog"><strong>Release Log</strong> - <a href="#toc">top</a></h3>
+		
+				
+		<p>Key</p>
+<pre>
++ New Feature
+* Bug Fix
+- Other Change
+</pre>	
+
+		<p>Version 5.0</p>
+		<p><strong>This version includes a large number of code changes (all new permissions system). If you are an existing user please ensure you have a full backup of database and files before upgrading.</strong></p>
+
+		<ul>
+			<li>+ New in-house designed default theme (called v5)</li>
+			<li>+ New task based permissions system. Replaces old fixed user level permissions (you can now create and customise your own user permission groups).</li>
+			<li>+ You can now search custom fields (where client modify is enabled)</li>
+			<li>+ You can now set a colour for the ticket priorities.</li>
+			<li>+ Reply To email header is now used for POP3 download if set.</li>
+			<li>+ Date and Datetime custom fields are now supported.</li>
+			<li>* Upgraded bootstrap-datetimepicker and moment libraries (fixes Safari crash when datepicker is enabled on a page + other browser crashes)</li>
+			<li>- sub_themes value in the specific theme class is no longer required, this is generated automatically.</li>
+			<li>- API class can now accept raw json data.</li>
+			<li>- Increased time out on auto update system to 60 seconds (up from 5), allows the update system to work better.</li>
+			<li>- Upgraded WYSIWYG to Redactor 10.0.1</li>
+			<li>- Upgraded Select2 to 3.5.0</li>
+			<li>- Upgraded to Bootstrap 3.2</li>
+			<li>- Added Morris graphs library.</li>
+			<li>- More plugin hooks.</li>
+			<li>- Plugins page will now show if there is an update for the application and/or db upgrade (makes plugin page show all possible updates to the system).</li>
+			<li>- Some possible improvements to encoding issues with POP3 downloader (still some improvements to be made in future versions).</li>
+			<li>- HTML fixes and improvements.</li>
+			<li>- HTML fixes and improvements to installer.</li>			
+			<li>- Many other minor tweaks and changes.</li>
+		</ul>		
+		
+
+		<p>Version 4.5.1</p>
+		<ul>
+			<li>* Fixed bug that meant when submitters edited a ticket where custom fields had client modify was set to no where being deleted/lost.</li>
+			<li>+ Added a date due field for tickets (currently for Admin, Global Moderator and Moderator).</li>
+		</ul>
+
+		<p>Version 4.5</p>
+		<ul>
+			<li>+ Ticket Views (ajax system designed to show staff members who else is also looking at the same ticket).</li>
+			<li>+ Ticket Index now remembers the page number.</li>
+			<li>+ You can now increase the session timeout setting in Settings -> Authentication.</li>
+			<li>- Audit History fixes and improvements.</li>
+			<li>- Clearing individual select box values has been improved.</li>
+			<li>- Upgraded WYSIWYG to Redactor 9.2.3</li>
+			<li>* Minor bug fixes to Facebook authentication.</li>
+		</ul>
+
+		<p>Version 4.4</p>
+		
+		<ul>
+			<li>+ You can now transfer and assign tickets when adding a public reply.</li>
+			<li>+ Audit History now tracks: ticket replies (including via portal, guest portal and POP3).</li>
+			<li>+ Added Facebook as an authentication option.</li>
+			<li>- More plugin hooks.</li>
+			<li>- HTML fixes and improvements.</li>
+		</ul>
+
+		<p>Version 4.3.2</p>
+		
+		<ul>
+			<li>* Fixed Bootstrap Datepicker for searching tickets via date added.</li>
+			<li>* Fixed Company ID not being set in the session on login (used for CRM plugin).</li>
+		</ul>
+
+		<p>Version 4.3.1</p>
+		<ul>
+			<li>- More speed improvements to the ticket index when using a large database with many ticket replies.</li>
+			<li>- Upgraded Select2 Library to 3.4.7 trunk build.</li>
+			<li>- Upgraded Bootstrap Datepicker Library to 3.0.</li>
+			<li>- More plugin hooks.</li>
+			<li>- Support for future plugins (CRM 4.3 and Timesheets).</li>
+			<li>- Upgraded WYSIWYG to Redactor 9.2.2</li>
+			<li>* Fixed bug when editing a ticket reply, parts of the description may go missing.</li>
+		</ul>
+
+		<p>Version 4.3</p>
+		<p>
+			<strong>
+				WARNING: If you are upgrading from an older version of tickets please ensure that both
+				the /user/themes/standard/ and /user/themes/bootstrap/ folders are removed/deleted.
+				Only the bootstrap3 folder is required. Older theme folders are not updated and may contain security bugs/flaws etc.
+				The Autoupdate system cannot delete files or folders.
+			</strong>
+		</p>
+		<ul>
+			<li>+ Morning theme is back.</li>
+			<li>+ Ticket Audit History.</li>
+			<li>+ Private files can now be attached to a ticket.</li>
+			<li>+ Search now finds tickets on attachment file name (does not include private files).</li>
+			<li>+ Users can now select to reverse the view ticket page (add reply at the top, latest replies first and then the original ticket at the bottom). Changed from Profile -> Edit page.</li>
+			<li>+ You can now search tickets via date added.</li>
+			<li>+ Global Mods &amp; Admins can now change owner/user of a ticket.</li>
+			<li>- Some speed improvements to the ticket index when using a large database with many ticket replies.</li>
+			<li>- Increased minsize of WYSIWYG editor.</li>
+			<li>- Upgraded default bootstrap theme to bootstrap 3.1.1</li>
+			<li>- Upgraded JQuery UI Slider Access Library</li>
+			<li>- Upgraded JQuery UI Timepicker Library</li>
+			<li>- Upgraded JQuery Cookie Library</li>
+			<li>- Upgraded JQuery Library</li>
+			<li>- Upgraded WYSIWYG to Redactor 9.2.1</li>
+			<li>* A number of bug fixes to the merge function.</li>
+			<li>* Fixed possible bug where first opened and closed statuses are not actually opened or closed (actually fixed this time).</li>
+		</ul>
+
+		<p>Version 4.2.1</p>
+		<ul>
+			<li>- Improved support for future CRM plugin.</li>
+			<li>- Improvements to installer for new installs.</li>
+			<li>* Fixed possible database bug where first opened and closed statuses are not actually opened or closed (rare).</li>
+		</ul>
+
+		<p>Version 4.2</p>
+		
+		<ul>
+			<li>+ You can now create custom fields that Guests/Submitters (clients) cannot see.</li>
+			<li>+ Now checks enabled plugins for updates (plugins must be updated to support this feature).</li>
+			<li>+ Auto update system allows you to re-download the latest installer (useful for repairing installs or if an updated didn't overwrite all files correctly).</li>
+			<li>+ You can now view the raw pop email data for tickets and ticket replies.</li>
+			<li>+ Queue Viewer (so you can now see what items are currently in the queue to be sent, found at settings/queue/.</li>
+			<li>+ Active Directory user details (name, email, phone) are now updated if changed on next login.</li>
+			<li>+ LDAP user details (name, email) are now updated if changed on next login.</li>
+			<li>+ JSON user details (name, email) are now updated if changed on next login.</li>
+			<li>+ Basic Single Sign On (SSO) Support. More info - <a href="https://portal.dalegroup.net/p/kb_view/28/">https://portal.dalegroup.net/p/kb_view/28/</a>.</li>
+			<li>* Fixed bug when creating a new user, email notifications were enabled even if set to disabled.</li>
+			<li>* HTML fixes and improvements.</li>
+			<li>* Fixed WYSIWYG font colour buttons from not working.</li>
+			<li>- Upgraded HTMLPurifier to version 4.6.0.</li>
+			<li>- Upgraded WYSIWYG to Redactor 9.1.9</li>
+			<li>- Changed transfer icon on ticket index page.</li>
+		</ul>
+		
+		<p>Version 4.1.1</p>
+		
+		<ul>
+			<li>- Performance improvements to tickets index page on larger databases.</li>
+			<li>- Upgraded WYSIWYG to Redactor 9.1.8</li>
+			<li>- Defaults theme to Bootstrap 3 for users upgrading (standard and bootstrap2 themes are not supported).</li>
+			<li>* Fixed bug where CC messages weren't sent when the ticket owner had email notifications switched off.</li>
+		</ul>
+
+		<p>Version 4.1</p>
+		<p>
+			<strong>
+				This version no longer supports the standard or bootstrap2 theme.
+				<br />This version no longer supports IE8.
+			</strong>
+		</p>
+	
+		<ul>
+			<li>+ File attachments are now included in email notifications.</li>
+			<li>+ Email subject is now saved &amp; displayed for POP3 downloaded ticket replies.</li>
+			<li>+ POP3 downloaded email is now saved unmodified in the database (attached to either ticket or ticket reply), for debugging &amp; future use.</li>
+			<li>+ You can now transfer a ticket to a new department in the private reply area.</li>
+			<li>+ You can now assign a ticket to a user in the private reply area.</li>
+			<li>+ You can now search logs.</li>
+			<li>+ You can now filter logs per user.</li>
+			<li>+ Email subject is now logged in logs.</li>
+			<li>+ Name of user is now displayed next to logs.</li>
+			<li>+ New API calls - Authenticate &amp; Add User.</li>
+			<li>+ Improvements to custom API calls.</li>
+			<li>+ Print CSS for view ticket page.</li>
+			<li>+ Installer has been updated to Bootstrap 3 interface.</li>
+			<li>- Some changes to email notification logic. We have more major changes planned for a future version.</li>
+			<li>- Ticket Status and Departments are now ordered alphabetically.</li>
+			<li>- Turned off autocomplete for username/password on POP3/SMTP add/edit pages.</li>
+			<li>- Upgraded WYSIWYG to Redactor 9.1.7</li>
+			<li>- Upgraded dropdowns to Select2 3.4.5</li>
+			<li>- Upgraded default bootstrap theme to bootstrap 3.0.2.</li>
+			<li>- Removed all extra languages (they were out of date and not maintained, we will be releasing a separate zip download containing them).</li>
+			<li>* Fixed some PHP notices.</li>
+			<li>* Fixed some bugs in email notifications.</li>
+			<li>* Fixed some character encoding issues in email subjects when sending notifications.</li>
+			<li>* Fixed some character encoding issues in file downloads.</li>
+		</ul>	
+
+		<p>Version 4.0 (not publicly released)</p>
+		<p>
+			<strong>
+				This version no longer supports the standard or bootstrap2 theme.
+				<br />This version no longer supports IE8.
+			</strong>
+		</p>
+		
+		<ul>
+			<li>+ All new Bootstrap 3 interface.</li>
+			<li>+ When adding a ticket reply you can now select a custom status.</li>
+			<li>+ You can now create private replies that cannot be seen by submitters.</li>
+			<li>+ You can now edit and delete ticket replies.</li>
+			<li>+ You can now unset a specific filter option on the ticket page without clearing the whole search.</li>
+			<li>* Fixed Canned Responses from duplicating the existing reply.</li>
+			<li>* Some fixes to certain text that couldn't be translated.</li>
+			<li>* Fixed Type filter from being reset when changing pages.</li>
+			<li>- Moved Merge option to above Delete in the mass change dropdown.</li>
+			<li>- Upgraded WYSIWYG to Redactor 9.1.5</li>
+			<li>- Upgraded dropdowns to Select2 3.4.3</li>
+			<li>- Upgraded jquery to 1.10.2</li>
+		</ul>
+
+		<p>Version 3.5</p>
+		<p>
+			<strong>
+				This version no longer supports the standard theme.
+				<br />This version no longer supports IE8.
+			</strong>
+		</p>
+		
+		<ul>
+			<li>+ New Theme (sesamo)</li>
+			<li>+ You can now merge tickets.</li>
+			<li>+ The system can now auto create users from POP downloaded emails.</li>
+			<li>+ The system can now auto create users from guest portal tickets.</li>
+			<li>+ Custom JSON Authentication for use with external systems.</li>
+			<li>+ You can now use the #TICKET_KEY# token in the subject of email notifications (subject is checked first and then the ticket body).</li> 
+			<li>+ Now displays the number of tickets being shown on the ticket list page.</li>
+			<li>+ Administrators and Moderators can now delete a ticket directly from the view ticket page.</li>
+			<li>+ Guests can now download files attached to tickets via the guest portal.</li>
+			<li>* Some fixes to certain text that couldn't be translated.</li>
+			<li>* Fixed some PHP notices.</li>
+			<li>- Reduced the number of notifications sent to the same person when in a department that gets extra notifications.</li>
+			<li>- Ticket Status colour is now used for the background and not the text.</li>
+			<li>- Minor display improvements to custom fields on view ticket page.</li>
+			<li>- Some CSS improvements for smaller screens.</li>
+			<li>- Upgraded WYSIWYG to Redactor 9.1.4</li>
+			<li>- Upgraded Drop downs to Select2 3.4.2</li>
+			<li>- Improved support for future CRM plugin.</li>
+		</ul>
+		
+		<p>Version 3.4</p>
+		<p>
+			<strong>
+				This version is the last version to support the standard theme.
+				<br />This version no longer supports IE8.
+			</strong>
+		</p>
+
+		<ul>
+			<li>+ Dashboard</li>
+			<li>+ You can now CC tickets to a list of email addresses (bootstrap theme only).</li>
+			<li>+ Dropdown select boxes using Select2 now work in the Standard theme.</li>
+			<li>- Improvements to the add ticket and guest add ticket pages (bootstrap theme only).</li>
+			<li>- Minor improvements to the plugins page (bootstrap theme only).</li>
+			<li>- Upgrades to framework and components to support more complex plugins (table access get method now supports custom database joins via plugins).</li>
+			<li>- Upgraded WYSIWYG to Redactor 9.0.4</li>
+			<li>- Upgraded default bootstrap theme to bootstrap 2.3.2.</li>
+			<li>- Upgraded morning bootstrap theme to bootstrap 2.3.2.</li>
+			<li>- Upgraded chrome bootstrap theme to bootstrap 2.3.2.</li>
+			<li>- HTML Fixes and Improvements</li>
+			<li>- Ticket status count on support page (bootstrap theme only).</li>
+			<li>- Guest Portal will now auto redirect to the Add Ticket page if no guest portal message/text has been set.</li>
+			<li>* Fixed some PHP strict notices.</li>
+			<li>* Possible fixes for POP3 downloader importing the same emails if "Leave Message on Server" is enabled (a database option is also available to reject emails with missing message-id headers).</li>
+			<li>* Minor bug fixes.</li>
+		</ul>
+
+		<p>Version 3.3</p>
+		<ul>
+			<li>+ New Bootstrap theme (called Chrome).</li>
+			<li>+ Canned Responses (setup from Settings -> Tickets).</li>
+			<li>* Bug fixes when running in MySQL Strict Mode.</li>
+			<li>* Fixed tickets not going into default department if no department selector is visible (and therefore fixes a notification bug).</li>
+			<li>* Other minor bug fixes.</li>
+			<li>- Upgraded WYSIWYG to Redactor 8.2.6</li>
+		</ul>
+		
+		<p>Version 3.2</p>
+		
+		<ul>
+			<li>+ When adding a new user existing tickets are matched based on the email address.</li>
+			<li>+ You can now add guest users that cannot login.</li>
+			<li>+ Ticket filter is now hidden in the mobile bootstrap view with a show button.</li>
+			<li>+ Ticket search now also searches any replies attached to a ticket.</li>
+			<li>+ New dropdown select boxes using Select2 (bootstrap themes only).</li>
+			<li>+ Date user created is now stored and displayed on view user page (all existing users will default to upgrade date).</li>
+			<li>+ Show Enabled/Disabled buttons for plugins page.</li>
+			<li>+ You can now upload multiple files at a time.</li>
+			<li>+ You can now delete a file from a ticket on the edit ticket page.</li>
+			<li>+ New Modal Popover that allows you to easily transfer/assign/delete a single ticket (bootstrap themes only).</li>
+			<li>+ iOS icons for home screen.</li>
+			<li>- Improved the view user and view ticket page layout.</li>
+			<li>- Tickets will automatically set a ticket to open if the user replies to a ticket. This status now only changes if the state of the ticket is currently inactive (e.g. if you have a custom status called "in progress" that is a type of open, then any reply would have set this back to "open", this status will now stay as "in progress").</li> 
+			<li>- Lots more plugin hooks.</li>
+			<li>- Lots of tweaks to improve usage when on a mobile device (when using bootstrap theme).</li>
+			<li>- Storage path is now set during install.</li>
+			<li>- Upgraded internal date functions to support UTC.</li>
+			<li>- Increased the amount of time the database upgrade script can run (needed for very large databases).</li>
+			<li>- Upgraded default bootstrap theme to bootstrap 2.3.1.</li>
+			<li>- Upgraded morning bootstrap theme to bootstrap 2.3.1.</li>
+			<li>- Upgraded HTMLPurifier to version 4.5.0.</li>
+			<li>- Upgraded JQuery to 1.9.1.</li>
+			<li>- Upgraded JQuery UI to 1.10.1.</li>
+			<li>- Upgraded JQuery ColorBox to 1.4.3.</li>
+			<li>- Upgraded WYSIWYG to Redactor 8.2.4</li>
+		</ul>
+		
+		<p>Version 3.1</p>
+		
+		<ul>
+			<li>+ Auto Updater System (allows you to upgrade Tickets directly from the web interface).</li>
+			<li>+ New email notifications (New Department Ticket and New Department Ticket Reply) that allow staff and higher user levels to get notifications when new tickets are created within their assigned departments.</li>
+			<li>+ You can now set the timezone during the install.</li>
+			<li>+ More email notifications tokens.</li>
+			<li>- More items can now be translated into different languages.</li>
+			<li>- Upgraded WYSIWYG to Redactor 8.2.2</li>
+			<li>- Show open/closed tickets button for all users.</li>
+			<li>- Submitters can no longer edit Status and Priority of a ticket.</li>
+			<li>- Full Time/Date of a ticket can be seen when hovering over Added/Updated values.</li>
+			<li>- Tweaks and bug fixes.</li>
+		</ul>
+
+		<p>Version 3.0</p>
+		<ul>
+			<li>+ Two all new bootstrap themes with mobile support.</li>
+			<li>+ Danish language translation.</li>
+			<li>+ Theme Switcher.</li>
+			<li>+ Ticket notes/replies will now display the correct user details if from a non-user.</li>
+			<li>+ LDAP Authentication Support (tested with OpenLDAP 2.4.31-1ubuntu2)</li>
+			<li>+ You can now edit Custom Field values on the edit ticket page.</li>
+			<li>+ JSON API Version 1.0.</li>
+			<li>* Fixed time being 1 hour incorrect.</li>
+			<li>* Fixed last 6 months function used in report plugin.</li>
+			<li>- Improvements to email notifications (Ticket Department, Ticket Status and Ticket Priority can now be used).</li>
+			<li>- Upgraded WYSIWYG to Redactor 8.2.1</li>
+			<li>- Admins can now directly go to a user from the new ticket page.</li>
+		</ul>
+		
+		<p>Version 2.5</p>
+		<ul>
+			<li>+ Mass Moderate now works with custom status.</li>
+			<li>+ New plugin hooks for view user page, register user page and tickets view.</li>
+			<li>+ Auto prune old logs after 100,000 logs (once a week).</li>
+			<li>+ Auto database optimise (once a month).</li>
+			<li>+ Ticket will be automatically reopened if a new message is sent to it via POP.</li>
+			<li>+ Welcome Email when creating new users.</li>
+			<li>* Encoding fixes and improvements when downloading emails via POP.</li>
+			<li>* Fixes to user dropdown lists when only a single department exists.</li>
+			<li>* Fixed Queue bug where emails might not get deleted from the queue.</li>
+			<li>- Upgraded WYSIWYG to Redactor 8.1.1</li>
+			<li>- Upgraded JQuery to 1.8.2 (if you are running the calendar plugin make sure are using Version 1.1)</li>
+			<li>- Stopped spamming the event log with POP3 messages.</li>
+		</ul>
+	
+		<p>Version 2.4.1</p>
+		<ul>
+			<li>- Upgraded WYSIWYG to Redactor 8.1.0</li>
+			<li>* Fixed POP3 download not working on certain installs.</li>
+			<li>* Fixed Department delete.</li>
+			<li>* Fixed Department member count after a user has been deleted.</li>
+		</ul>
+
+		<p>Version 2.4</p>
+		<p><strong>This version includes a large number of code changes to support department permissions. If you are an existing user please test/try 2.4 with a fresh install before upgrading.</strong></p>
+		<ul>
+			<li>+ Departments have had a complete overhaul (permissions and user assignment).</li>
+			<li>+ Two new permission levels (staff and global moderator).</li>
+			<li>+ User dropdown lists are now dynamic and correctly list valid users for each department or permission type (i.e you cannot assign a ticket to a submitter).</li>
+			<li>+ Portuguese Language (thanks to a couple of the users of Tickets for providing this).</li>
+		</ul>
+		
+		<p>Version 2.3</p>
+		<ul>
+			<li>+ Multiple SMTP accounts are now supported.</li>
+			<li>+ <a href="https://pushover.net/">Pushover</a> Notification Support</li>
+			<li>+ New Logo</li>
+			<li>- Installer now does even more checking of the server setup before install can continue.</li>
+			<li>- Improved code documentation</li>
+			<li>- Other minor tweaks to the system.</li>
+			<li>* Workaround for bug in certain PHP versions not allowing login.</li>
+			<li>* Fixed some bugs with Timezone support.</li>
+		</ul>
+
+		<p>Version 2.2</p>
+		<ul>
+			<li>+ Ticket Custom Status (with Colour Picker)</li>
+			<li>+ Timezone Support</li>
+			<li>+ When there is more than 1 department all users can select a department on ticket submit.</li>
+			<li>+ Moderators can now set User and Assigned User when creating a ticket.</li>
+			<li>- Upgraded WYSIWYG to Redactor 8.0.3.</li>
+			<li>- Improvements to plugin API and documentation.</li>
+		</ul>
+		
+		<p>Version 2.1</p>
+		
+		<ul>
+			<li>+ Ticket Custom Fields</li>
+			<li>- Better logging if Active Directory fails when logging in.</li>
+			<li>- Installer now does more checking of the server setup before install can continue.</li>
+			<li>- Upgraded POP3 library.</li>
+			<li>* Fixes to downloading POP3 emails with quoted-printable encoding.</li>
+			<li>* Installer now correctly creates .htaccess file for installs that contain a space in the folder.</li>
+			<li>* Fixed encoding of certain files that may stop tickets from working after first install.</li>
+			<li>* MySQL strict mode fixes when using Active Directory.</li>
+			<li>* PHP strict mode fixes.</li>
+		</ul>
+
+		<p>Version 2.0.2</p>
+		
+		<ul>
+			<li>* Now installs when MySQL strict mode is enabled.</li>
+		</ul>
+		
+		<p>Version 2.0.1</p>
+		
+		<ul>
+			<li>- Support for Calendar plugin.</li>
+			<li>- Upgraded WYSIWYG to Redactor 8.0.2.</li>
+			<li>- Upgraded PHP adLDAP to 4.0.4.</li>
+			<li>- Minor improvements to theme system.</li>
+			<li>- Minor improvements to documentation and installer.</li>
+		</ul>
+		
+		<p>Version 2.0</p>
+		
+		<ul>
+			<li>+ Guest Portal (allows users to submit and view tickets without needing to login or create an account).</li>
+			<li>+ Multiple POP3 accounts are now supported.</li>
+			<li>+ New premium WYSIWYG editor (using the latest Redactor 8.0).</li>
+			<li>+ Private Messages (between users, moderators and admins. Submitters can receive only)</li>
+			<li>+ You can now select which department to download POP emails into (set per POP account).</li>
+			<li>+ You can now disable file downloading from POP email (set per POP account).</li>
+			<li>+ You can now edit the Email Notifications sent to users for Tickets and Ticket Notes (using the WYSIWYG editor).</li>
+			<li>+ Tickets can now support different languages (only includes Australian English at this stage, if you can add translations please contact us!).</li>
+			<li>+ Anti-Spam Captcha (for user registration and guest add ticket pages).</li>
+			<li>+ You can now search users.</li>
+			<li>+ You can now filter logs (and paging support).</li>
+			<li>- Cleaned up Settings pages.</li>
+			<li>- Lots of little interface tweaks.</li>
+			<li>- Documentation improvements.</li>
+			<li>* Fixed session garbage collection cron task (sessions should now expire correctly).</li>
+		</ul>
+
+		<p>Version 1.5.1</p>
+		
+		<ul>
+			<li>+ Ticket Email Notifications can now be sent to non-users (enable from POP3 settings).</li>
+			<li>* Fixed logic error in certain Email Notifications.</li>
+		</ul>
+		
+		<p>Version 1.5</p>
+		<ul>
+			<li>+ You can now sort by different columns on the tickets view page.</li>
+			<li>- Improved Software Update Notifications (can now display release notes and download link directly in the program)</li>
+			<li>- Automatically removes magic quotes (if enabled) and unregisters global variables (improves security and increases server support).</li>
+			<li>- Minor improvements to plugin API</li>
+			<li>- You can now edit the "Email Notification" setting for users.</li>
+			<li>- Support for future graph/report plugin.</li>
+			<li>* Fixed POP3 bug that caused system to download the same file attachments when "Leave Message on Server" was enabled</li>
+			<li>* HTML Fixes and Improvements.</li>
+
+		</ul>
+		
+		<p>Version 1.4</p>
+		<ul>
+			<li>+ Plugins Support</li>
+			<li>+ Search by Ticket ID</li>
+			<li>+ Phone and Address fields for Users</li>
+			<li>+ Admins and Moderators can now delete a ticket on the ticket edit page.</li>
+			<li>- Interface fixes and improvements</li>
+
+		</ul>
+
+		<p>Version 1.3.1</p>
+		<ul>
+			<li>* Fixes to database when storing large tickets.</li>
+			<li>* Fixes to timeago class encoding on certain web hosts.</li>
+			<li>- HTML Support is now enabled by default.</li>
+		</ul>
+
+		<p>Version 1.3</p>
+		<ul>
+			<li>+ Mass tickets delete option for moderators and admins.</li>
+			<li>- More improvements on POP download and SMTP emails for better results in different email clients.</li>
+		</ul>		
+		
+		<p>Version 1.2.1 (not publicly released)</p>
+		
+		<ul>
+			<li>+ Now able to set SMTP Port and TLS (i.e you can now use a gmail account to send messages).</li>
+			<li>+ Option to Leave Messages on POP server.</li>
+			<li>+ Support Page</li>
+			<li>- Improved plain text email importing when HTML is enabled.</li>
+		</ul>
+		
+		<p>Version 1.2</p>
+		
+		<ul>
+			<li>+ Forgot/Reset Password.</li>
+			<li>+ HTML Purifier on Message output, Login Message and Logs for increased security.</li>
+			<li>* Fixed Ticket Updated Date not always updating</li>
+		</ul>
+		
+		<p>Version 1.1</p>
+		
+		<ul>
+			<li>+ HTML Mode (switches system from plain text to supporting HTML and having a WYSIWYG editor in tickets).</li>
+			<li>+ Basic Departments (allowing you to better categorise tickets).</li>
+			<li>+ Improved Search Options (Department, User and Assigned User Filter for Moderator and Administrator).</li>
+			<li>+ POP3 system can now download files from email (and supports HTML email if enabled).</li>
+			<li>+ Improved Display on iPhone and Small Screens (using the first version of our responsive css)</li>
+			<li>- Database queries improved for increased speed (tested with up to 100,000 tickets).</li>
+			<li>* HTML Bug Fixes.</li>
+		</ul>
+
+		<p>Version 1.0</p>
+		
+		<ul>
+			<li>Released.</li>
+		</ul>
+		
+		<br />	
+		
+		<hr>
+
+
+		<h3 id="developers"><strong>Developers</strong> - <a href="#toc">top</a></h3>
+		
+		<p>As of version 1.4 Tickets supports plugins.</p>
+		
+		<p>You can download the developers pack <a href="http://onlinecompanyportal.com/files/sts-dev-1.1.zip">here</a>.</p>
+
+	
+		<hr>
+		
+		<h3 id="plugins"><strong>Plugins</strong> - <a href="#toc">top</a></h3>
+		
+		<p>As of version 1.4 tickets now supports plugins.</p>
+		
+		<p>Plugins allow you to extend Tickets without modifying the core code. This means that you can easily distribute extra functionality without requiring users to make any code changes.</p>
+		
+		<p>Plugins also allow users to upgrade to a new version of Tickets without needing to re-apply code changes.</p>
+
+		<hr>
+
+		<h3 id="hooks"><strong>Plugin Hooks</strong> - <a href="#toc">top</a></h3>
+		
+		<p>A plugin hook is an area where your plugin can interact with Tickets.</p>
+		
+		<p>During sections of processing Tickets will call a plugin hook, this is where your plugin comes alive.</p>
+		
+		<p>The plugin system allows you to add sections to Tickets that look exactly like the built in functionality.</p>
+		
+		<p>Below is an example of creating a hook.</p>
+		
+<pre>
+//get the plugins class
+$plugins 		= &amp;sts\singleton::get('sts\plugins');
+
+//setup a hook
+$plugins->add(
+	array(
+		'plugin_name'	=> 	__CLASS__,
+		'task_name'		=> __CLASS__ . 'section_name',
+		'section'		=> 'section_name',
+		'method'		=> array($this, 'section_name')
+	)
+);	
+</pre>
+
+		<p>Plugins are stored in the user/plugins/ folder and can be activated from the settings page.</p>
+		
+		<table class="data-table">
+			<tr>
+				<th>Section Name</th>
+				<th>Area</th>
+				<th>Example Use</th>
+				<th>Version</th>
+			</tr>
+
+			<tr>
+				<td class="centre">loader</td>
+				<td class="centre">Runs at the end of loader.php</td>
+				<td class="centre">Useful for setting up data after all plugins are loaded.</td>
+				<td class="centre">1.4+</td>
+			</tr>
+			<tr>
+				<td class="centre">html_header</td>
+				<td class="centre">Runs in the HTML head section.</td>
+				<td class="centre">Useful for loading in extra CSS or Javascript files.</td>
+				<td class="centre">1.4+</td>
+			</tr>
+			<tr>
+				<td class="centre">html_header_nav_start</td>
+				<td class="centre">Runs in the HTML menu section.</td>
+				<td class="centre">Useful for adding extra menu items.</td>
+				<td class="centre">1.4+</td>
+			</tr>
+			<tr>
+				<td class="centre">html_header_nav_settings</td>
+				<td class="centre">Runs in the HTML settings menu section.</td>
+				<td class="centre">Useful for adding extra menu items to the settings drop down.</td>
+				<td class="centre">1.4+</td>
+			</tr>
+			<tr>
+				<td class="centre">plugin_page_header_*</td>
+				<td class="centre">Runs before the HTML header in a specific/requested page.</td>
+				<td class="centre">
+					Visit /p/examplecsslist/ and plugin_page_header_examplecsslist is called. Visit /p/foo/ and plugin_page_header_foo is called.
+					<br />
+					This section should be used to set the title of new pages (and other page setup) for logged in users.
+				</td>
+				<td class="centre">1.4+</td>
+			</tr>
+			<tr>
+				<td class="centre">plugin_page_body_*</td>
+				<td class="centre">Runs in the body of a specific/requested page.</td>
+				<td class="centre">
+					Visit /p/examplecsslist/ and plugin_page_body_examplecsslist is called. Visit /p/foo/ and plugin_page_body_foo is called.
+					<br />
+					This section should be used to create HTML in the body of the new page. For logged in users.
+				</td>
+				<td class="centre">1.4+</td>
+			</tr>
+			<tr>
+				<td class="centre">public_page_header_*</td>
+				<td class="centre">Runs before the HTML header in a specific/requested page.</td>
+				<td class="centre">
+					Visit /public/examplecsslist/ and public_page_header_examplecsslist is called. Visit /public/foo/ and public_page_header_foo is called.
+					<br />
+					This section should be used to set the title of new pages (and other page setup). For pages that don't require the user to be logged in.
+				</td>
+				<td class="centre">1.4+</td>
+			</tr>
+			<tr>
+				<td class="centre">public_page_body_*</td>
+				<td class="centre">Runs in the body of a specific/requested page.</td>
+				<td class="centre">
+					Visit /p/examplecsslist/ and public_page_body_examplecsslist is called. Visit /p/foo/ and public_page_body_foo is called.
+					<br />
+					This section should be used to create HTML in the body of the new page. For pages that don't require the user to be logged in.
+				</td>
+				<td class="centre">1.4+</td>
+			</tr>
+						<tr>
+				<td class="centre">cron_*</td>
+				<td class="centre">Runs when a specific cron interval is run.</td>
+				<td class="centre">Useful for background processing or tasks that need to happen often.
+				<br />Hooks include: cron_every_five_minutes, cron_every_hour, cron_every_day, cron_every_week and cron_every_month.
+				</td>
+				<td class="centre">1.4+</td>
+			</tr>
+			
+			<tr>
+				<td class="centre">download_other_files</td>
+				<td class="centre">Runs in /files/download/ when ticket_id isn't set</td>
+				<td class="centre">Useful for downloading other files.<br />
+				Use method download_other_files(&amp;$files) and pass an array of files from the storage class.
+				</td>
+				<td class="centre">1.5+</td>
+			</tr>
+
+			<tr>
+				<td class="centre">view_ticket_details_finish</td>
+				<td class="centre">Runs in the view ticket page after the ticket details (guest portal included).</td>
+				<td class="centre">Useful for displaying extra details about a ticket.</td>
+				<td class="centre">2.2+</td>
+			</tr>			
+	
+			<tr>
+				<td class="centre">view_ticket_user_details_finish</td>
+				<td class="centre">Runs in the view ticket page after the users details (guest portal included).</td>
+				<td class="centre">Useful for displaying extra details about a user on the ticket page.</td>
+				<td class="centre">2.2+</td>
+			</tr>	
+		
+			<tr>
+				<td class="centre">view_ticket_sidebar_finish</td>
+				<td class="centre">Runs in the view ticket page after all sidebar boxes (guest portal included).</td>
+				<td class="centre">Useful for adding an extra sidebar box.</td>
+				<td class="centre">2.2+</td>
+			</tr>	
+			
+			<tr>
+				<td class="centre">profile_content_finish</td>
+				<td class="centre">Runs after the content on the profile page.</td>
+				<td class="centre">Useful for adding extra content boxes on the profile page.</td>
+				<td class="centre">2.2+</td>
+			</tr>
+			
+			<tr>
+				<td class="centre">auth_logged_in_start</td>
+				<td class="centre">Runs when "if logged in" is checked in the system.</td>
+				<td class="centre">Useful when using a custom login system.
+				</td>
+				<td class="centre">2.2+</td>
+			</tr>
+			
+			<tr>
+				<td class="centre">auth_load_start</td>
+				<td class="centre">Runs when the logged in user is loaded from the database.</td>
+				<td class="centre">Useful when using a custom login system.</td>
+				<td class="centre">2.2+</td>
+			</tr>
+			
+			<tr>
+				<td class="centre">auth_login_start</td>
+				<td class="centre">Runs when a user logs in.</td>
+				<td class="centre">Useful when using a custom login system.<br />
+				An array of the username and password is passed to this hook.
+				</td>
+				<td class="centre">2.2+</td>
+			</tr>
+			
+			<tr>
+				<td class="centre">auth_logout_start</td>
+				<td class="centre">Runs when the user logs out.</td>
+				<td class="centre">Useful when using a custom login system.</td>
+				<td class="centre">2.2+</td>
+			</tr>	
+
+			<tr>
+				<td class="centre">view_user_sidebar_finish</td>
+				<td class="centre">Runs on the left side of the view user page.</td>
+				<td class="centre">Useful for adding extra information or sidebar widgets.</td>
+				<td class="centre">2.5+</td>
+			</tr>		
+
+			<tr>
+				<td class="centre">view_user_details_finish</td>
+				<td class="centre">Runs in the main content box of the view user page.</td>
+				<td class="centre">Useful for adding extra user data.</td>
+				<td class="centre">2.5+</td>
+			</tr>
+
+			<tr>
+				<td class="centre">submit_register_form_success_before_create_user</td>
+				<td class="centre">Runs after a user has successfully registered but before the account has been created.</td>
+				<td class="centre">Useful for validating any extra form fields that have been added.</td>
+				<td class="centre">2.5+</td>
+			</tr>			
+	
+			<tr>
+				<td class="centre">submit_register_form_success_after_create_user</td>
+				<td class="centre">Runs after a user has successfully registered and been created.</td>
+				<td class="centre">Useful for storing any extra form fields.</td>
+				<td class="centre">2.5+</td>
+			</tr>		
+			
+			
+			<tr>
+				<td class="centre">view_register_sidebar_finish</td>
+				<td class="centre">Runs on the left side of the view regsiter page.</td>
+				<td class="centre">Useful for adding extra information or sidebar widgets, or explaining extra form fields.</td>
+				<td class="centre">2.5+</td>
+			</tr>
+			
+			<tr>
+				<td class="centre">view_register_form</td>
+				<td class="centre">Runs in the register form</td>
+				<td class="centre">Useful for adding extra form fields.</td>
+				<td class="centre">2.5+</td>
+			</tr>
+			
+			<tr>
+				<td class="centre">view_user_content_finish</td>
+				<td class="centre">Runs after all existing user data on the view user page.</td>
+				<td class="centre">Useful for adding lists or large amounts of extra user data.</td>
+				<td class="centre">2.5+</td>
+			</tr>
+			
+			<tr>
+				<td class="centre">view_tickets_content_start</td>
+				<td class="centre">Runs above the tickets list.</td>
+				<td class="centre">Useful for adding alerts above the main tickets index view page.</td>
+				<td class="centre">2.5+</td>
+			</tr>
+			<tr>
+				<td class="centre">view_tickets_content_finish</td>
+				<td class="centre">Runs below the tickets list.</td>
+				<td class="centre">Useful for adding less important information to the tickets index view page.</td>
+				<td class="centre">2.5+</td>
+			</tr>
+			<tr>
+				<td class="centre">api_default_action</td>
+				<td class="centre">Runs when an unknown (custom) api_action is requested.</td>
+				<td class="centre">Useful for adding custom API calls.</td>
+				<td class="centre">3.0+ (use api_hook_authenticated_* for 4.1+)</td>
+			</tr>		
+			<tr>
+				<td class="centre">api_unauthenticate_action</td>
+				<td class="centre">Runs when an unauthenticated (custom) api_action is requested.</td>
+				<td class="centre">Useful for adding custom API calls.</td>
+				<td class="centre">3.1+ (use api_hook_unauthenticated_* for 4.1+)</td>
+			</tr>	
+			<tr>
+				<td class="centre">body_header</td>
+				<td class="centre">Runs just after the html body is loaded (for every page).</td>
+				<td class="centre">Useful for adding google analytics etc.</td>
+				<td class="centre">3.2+</td>				
+			</tr>
+			
+			<tr>
+				<td class="centre">api_hook_authenticated_*</td>
+				<td class="centre">Runs when an authenticated (custom) api_action is requested.</td>
+				<td class="centre">Useful for adding custom API calls.</td>
+				<td class="centre">4.1+</td>
+			</tr>
+			
+			<tr>
+				<td class="centre">api_hook_unauthenticated_*</td>
+				<td class="centre">Runs when an unauthenticated (custom) api_action is requested.</td>
+				<td class="centre">Useful for adding custom API calls.</td>
+				<td class="centre">4.1+</td>
+			</tr>
+			
+			
+		</table>
+
+
+		<hr>
+		
+	
+		<h3 id="credits"><strong>Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<h4>Dalegroup Pty Ltd</h4>
+		<ul>
+			<li>Michael Dale - Lead Developer</li>
+			<li>Max Theodore -  Usability &amp; Graphics Design</li>
+		</ul>
+		
+		<h4>3rd Party Code</h4>
+		
+		<p>A number of MIT, LGPL and other copyrighted libraries and resources have been used in this program. These copyrights remain the property of their owners.</p>
+		
+		<p>Some of these libraries include</p>
+		
+		<ul>
+			<li>adLDAP</li>
+			<li>POP3 Class</li>
+			<li>PHPMailer</li>
+			<li>jQuery</li>
+			<li>Redactor WYSIWYG Editor</li>
+			<li>HTML Purifier</li>
+			<li>Delicious (font by exljbris)</li>
+		</ul>
+		
+		<p>If we have missed anything please let us know!</p>
+		
+		<hr>
+		
+
+		<h3 id="license"><strong>License</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This program was developed by Dalegroup Pty Ltd and is copyrighted.</p>
+		
+		<p>THIS SOFTWARE AND THE ACCOMPANYING FILES ARE PROVIDED "AS IS" AND WITHOUT WARRANTIES OF ANY KIND WHETHER EXPRESSED OR IMPLIED.</p>
+		<p>In no event shall the author or Dalegroup Pty Ltd be held liable for any damages whatsoever, including without limitation, damages for loss of business profits, business interruption, loss of business information, or any other loss arising from the use or inability to use the software.</p>
+		
+		<p><strong>Your purchase of Tickets allows you to install a SINGLE (one) copy of Tickets on ONE server. You may not resell, distribute or rent Tickets.</strong></p>
+	
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this web application. As I said at the beginning, I'd be glad to help you if you have any questions relating to Tickets. No guarantees, but I'll do my best to assist.</p> 
+		
+		<p class="append-bottom alt large"><strong>Michael Dale</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

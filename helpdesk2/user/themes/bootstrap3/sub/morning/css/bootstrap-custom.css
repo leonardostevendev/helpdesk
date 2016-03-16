@@ -1,0 +1,109 @@
+body {
+	padding-top: 65px;
+	padding-bottom: 40px;
+	word-wrap: break-word;
+}
+
+
+p {
+  font-size: 15px;
+}
+
+label {
+  font-size: 80%;
+}
+
+select {
+  font-size: 80%;
+  width: 170px;
+  height: 25px;
+}
+
+.table th,
+.table td {
+  text-align: center;
+}
+
+td:first-child {
+	min-width: 65px;
+}
+
+.left-result {
+    margin: 3px;
+    float: left;
+    width: 30%;
+	font-weight: bold;
+}
+
+.right-result {
+    margin: 3px;
+    float: left; 
+}
+
+.ticket-note-1 {
+	border: 1px solid #ccc;
+}
+
+.ticket-note-2 {
+	background-color: #def2fb;
+	border: 1px solid #ccc;
+}
+
+.show-filter {
+	display: none;
+}
+.filter {
+	display: block;
+}
+
+.marginless {
+	margin-left: 0 !important;
+	margin-right: 15px !important;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar-right {
+	padding-right: 15px;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;   
+}
+
+@media (max-width: 979px) {
+	.show-filter {
+		display: block;
+	}
+	.filter {
+		display: none;
+	}
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.bg-light-gray {
+	background-color: #eaeaea;
+}
+
+
+body.modal-open,
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+  margin-right: 0; !important;
+}
+
+@media print {
+	.no_print {
+		display: none;
+	}
+}
