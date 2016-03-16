@@ -315,10 +315,12 @@ jQuery(document).ready(function(){
             <?php if (isset($message) && !$auth->logged_in()) { ?>
                 <script type="text/javascript">$('#myModal').modal('show')</script>
             <?php } ?>
+                
+            <?php if (isset($message)) { ?>
                 <div class="alert alert-danger">
                     <?php if(html_output($message)){ echo html_output($message);}?>
                 </div>
-           
+           <?php }?> 
 
             <div class="alert alert-warning"><?php echo safe_output($language->get('All login attempts are logged.')); ?></div>
 
@@ -361,11 +363,7 @@ jQuery(document).ready(function(){
                 <div class="clearfix"></div>
             </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary" id="btnLogin">Entrar</button>
-      </div>
+      </div>      
     </div>
   </div>
 </div>

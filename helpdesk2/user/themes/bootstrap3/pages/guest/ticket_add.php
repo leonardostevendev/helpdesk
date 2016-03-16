@@ -196,11 +196,11 @@ var tooltipAll =
 	{
 "test":"ayudaTest",
 "Plataforma":"Selecciona la plataforma correspondiente a tu solicitud SAGA: Para la plataforma de Gestion Academica o LMS: Para el aula virtual",
-"Usuario":"Digite su usuario o su numero de c√dula",
-"Curso":"jhgkjhgkjhgkjhg"
-
-
+"Usuario":"Digite su usuario o su numero de c√©dula",
+"Curso":"Es el grado que esta cursando en su institucion educativa"
 	};
+        
+var required=["Usuario"];
 var tooltipTitles=[];
 for (var i = 0 ; i < Object.keys(tooltipAll).length; i++) {
     tooltipTitles[i] = Object.keys(tooltipAll)[i];
@@ -208,11 +208,14 @@ for (var i = 0 ; i < Object.keys(tooltipAll).length; i++) {
 
 $("#custom-forms p").each(function(index){
 var str = $(this).text().trim().split(" ")
-console.log(str)
 	if($.inArray(str[0], tooltipTitles)>=0){
 		$(this).find(".ayuda").html('<a href="#" title="" data-toggle="tooltip" data-placement="top" class="catedra-tooltip" data-original-title="'+
-			tooltipAll[str[0]]+'"><i class="glyphicon glyphicon-question-sign"></i></a>');
+			tooltipAll[str[0]]+'"><i class="glyphicon glyphicon-question-sign"></i></a>');                
 	}
+        if($.inArray(str[0], required)>=0){
+            $(this).find("input").prop("required",true);
+        }
+       
 })
 $('[data-toggle="tooltip"]').tooltip(); 
 })
@@ -303,10 +306,9 @@ $('[data-toggle="tooltip"]').tooltip();
                                     <div id="attach_file_area"></div>
                                 </div>
                                 <?php } ?>  
-           		</div>           
-			<div class="clearfix"></div>
-
-			<div class="col-md-12 marginless">
+           		</div>      
+                    
+                    <div class="col-md-6">
 			
 				<div class="well well-sm">	
 					<p><?php echo safe_output($language->get('Description')); ?>				
@@ -324,6 +326,9 @@ $('[data-toggle="tooltip"]').tooltip();
 				</div>
 				
 			</div>
+			<div class="clearfix"></div>
+
+			
 			<div class="clearfix"></div>
 
 			<div class="col-md-12">
